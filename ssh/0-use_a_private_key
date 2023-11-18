@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Script to connect to your server using the private key
+
+ssh keygen -i ~/.ssh/school ubuntu@18.232.176.85
