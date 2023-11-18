@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 #Script to use puppet to make change on the config file
 
-file { 'etc/ssh/ssh_config':
+file { 'ect/ssh/ssh_cofig':
         ensure => present,
 
-content => "
+content =>"
 
         #SSH client configuration
         host*
