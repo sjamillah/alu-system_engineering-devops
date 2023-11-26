@@ -6,11 +6,11 @@ add-apt-repository ppa:vbernat/haproxy-1.8
 apt-get update
 apt-get -y install haproxy
 echo "ENABLED=1" >> /etc/default/haproxy
-printf %s "listen 5452-webs
+printf %s "listen 5819-webs
     bind *:80
     mode http
     balance roundrobin
-    server 5487-web-01 3.80.67.191:80 check
-    server 5487-web-02 54.210.47.110:80 check
+    server 5819-web-01 18.232.176.85:80 check
+    server 5819-web-02 18.234.51.9:80 check
 " >> /etc/haproxy/haproxy.cfg
 sudo service haproxy restart
