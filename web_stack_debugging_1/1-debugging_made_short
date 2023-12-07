@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#Making debuggng short and sweet
-sudo sed -i "s/8080/80/g" /etc/nginx/sites-enabled/default
-sudo service nginx restart
-kill -9 "$(cat /run/nginx.pid)"
+#Making debugging short and sweet
+sed -i "s/8080/80/g" /etc/nginx/sites-enabled/default
+service nginx restart
+echo "" /run/nginx.pid
